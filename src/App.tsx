@@ -1,16 +1,22 @@
 import React from "react";
-import Header from "./components/header/Header";
-import AsideLeft from "./components/AsideLeft/AsideLeft";
-import Main from "./components/Main/Main";
-import RightAside from "./components/RightAside/RightAside";
+import {Header} from "./components/header/Header";
+import {LeftAside} from "./components/LeftASide/LeftAside";
+import {RightAside} from "./components/RightAside/RightAside";
+import {Main} from "./components/Main/Main";
+import {Footer} from "./components/Footer/Footer"
 
-const App: React.FunctionComponent = ()=> {
+ export const App: React.FunctionComponent = ()=> {
   return (
-    <div className="container">
+    <div className='container'>
       <Header/>
-      <AsideLeft/>
-      <Main/>
-      <RightAside/>
+      
+      <div className="PanelOfTasc">
+        <div><LeftAside/></div>
+        <div><Main/></div>
+        <div><RightAside/></div>
+      </div>
+      <Footer/>
+    
       </div>
       
 
@@ -18,4 +24,3 @@ const App: React.FunctionComponent = ()=> {
   );
 }
 
-export default App;

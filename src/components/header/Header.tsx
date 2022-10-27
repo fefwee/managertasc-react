@@ -1,16 +1,18 @@
 import React from "react";
-import logo from "./images/logo.png"
+import style from './Header.module.css';
+import logo from "../../images/logo.png";
+import lamp from "../../images/lamp.png";
 
-const Header:React.FunctionComponent =()=>{
+ export const Header:React.FunctionComponent =()=>{
     return(
       <div className = "container">
-        <div className="header">
-        <div className="logo">
+        <div className={style.header}>
+        <div className={style.logo}>
           <img src={logo} alt="logo" />
         </div>
-        <nav className="menu">
-          <li>тема</li>
-          <li>окно профиля</li>
+        <nav className={style.menu}>
+          <li className={style.lamp}><img src={lamp} alt="lamp" /></li>
+          <li className={style.profile}></li>
         </nav>
         </div>
     
@@ -19,4 +21,3 @@ const Header:React.FunctionComponent =()=>{
   
     )
   }
-  export default Header;

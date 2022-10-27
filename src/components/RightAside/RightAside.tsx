@@ -1,11 +1,10 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
+import style from './RightAside.module.css'
 
-const RightAside:FunctionComponent= ()=>{
-return(
-    <div className="container">
-        <h1 className="red">three</h1>
-    </div>
-)
+
+
+export const RightAside: React.FunctionComponent = ()=>{
+    return(
+        <div className="GlobalPropAside"></div>
+    )
 }
-
-export default RightAside;

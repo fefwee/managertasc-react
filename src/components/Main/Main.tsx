@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from "react";
+import style from './Main.module.css'
   
-const Main:FunctionComponent = ()=>{
+export const Main:FunctionComponent = ()=>{
     return(
         <div className="container">
-            <h1 className="red">lore</h1>
+            <div className="GlobalPropAside"></div>
         </div>
     )
 }
-export default Main;
