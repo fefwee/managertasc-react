@@ -1,35 +1,34 @@
 .header{
-  background:#4682B4;
-  margin: 5px 0;
-    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+    background: #333;
+    border-radius: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
-    color:#fff;
-    font-size: 20px;
-  }
-  .menu{
+    justify-content: space-between;
+    padding:20px;
+}
+.headerBtn{
     display: flex;
-    margin-right: 10px;
-  }
-  .menu li{
-    margin-right: 10px;
-    font-size: 20px;
-  }
-  .logo img{
-    width: 50px;
-    height: 50px;
+}
+.headerBtn li{
+    margin-right: 50px;
+    box-shadow: 0 0 20px violet;
     border-radius: 10px;
-  }
-  .lamp img{
-    margin-top:20%;
-    width:25px;
-    height: 25px;
-  }
-  .profile{
-    width: 40px;
-    height: 40px;
-    border:2px solid #fff;
-    border-radius: 100%;
-  }
+    padding: 10px;
+}
+.wrapperBtn{
+    align-items: center;
+    display: flex;
+}
+
+.logo{
+        width: 100px;
+        height: 50px;
+        margin-right:20px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
